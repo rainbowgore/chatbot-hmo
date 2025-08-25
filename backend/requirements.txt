@@ -1,0 +1,10 @@
+# Python dependencies for the chatbot service
+fastapi
+uvicorn
+httpx
+python-dotenv
+openai
+beautifulsoup4
+tiktoken
+numpy
+scikit-learn

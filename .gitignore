@@ -1,0 +1,24 @@
+# Data
+phase2_data/
+
+# .cursor
+.cursor/
+
+# .cursorignore
+.cursorignore
+
+# testing
+
+testing/
+
+#planning
+
+planning/
+
+#venv
+
+venv/
+
+# .env
+.env
+
