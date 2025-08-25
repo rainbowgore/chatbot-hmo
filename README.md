@@ -1,6 +1,7 @@
 # Smart Health System - Healthcare Q&A with Profile Management
 
 A complete bilingual (Hebrew/English) healthcare system featuring an AI-powered Q&A interface with personalized user profile collection. Built with FastAPI backend and Streamlit frontend.
+Note: This system is designed to be run locally (FastAPI backend + Streamlit frontend). Deployment is not required for Part 2
 
 ## 🚀 Quick Start
 
@@ -300,10 +301,8 @@ frontend/
 ## 📝 Getting Started
 
 1. **Clone and start**: `./start_system.sh`
-2. **Open browser**: http://localhost:8501
+2. **Open browser**
 3. **Select language**: Choose Hebrew or English
 4. **Complete registration**: Follow the 9-step profile collection
 5. **Ask questions**: Get personalized healthcare answers
 6. **Enable debug mode**: See system internals (optional)
-
-The system is production-ready with comprehensive error handling, bilingual support, and robust state management! 🎉
