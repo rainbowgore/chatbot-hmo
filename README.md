@@ -1,7 +1,6 @@
 # Smart Health System - Healthcare Q&A with Profile Management
 
 A complete bilingual (Hebrew/English) healthcare system featuring an AI-powered Q&A interface with personalized user profile collection. Built with FastAPI backend and Streamlit frontend.
-Note: This system is designed to be run locally (FastAPI backend + Streamlit frontend). Deployment is not required for Part 2
 
 ## 🚀 Quick Start
 
