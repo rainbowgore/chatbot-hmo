@@ -1,0 +1,390 @@
+/* Hebrew/RTL Support and Custom Styling */
+
+/* Hebrew Font Stack */
+.hebrew-font {
+  font-family: "Segoe UI", "Arial Hebrew", "Noto Sans Hebrew", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* RTL Text Direction */
+.rtl-text {
+  direction: rtl;
+  text-align: right;
+  unicode-bidi: embed;
+}
+
+/* Mixed Content Support */
+.mixed-content {
+  direction: ltr;
+  text-align: left;
+}
+
+.mixed-content .hebrew-text {
+  direction: rtl;
+  text-align: right;
+  display: inline-block;
+}
+
+/* Profile Progress Styling */
+.profile-progress {
+  background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  margin: 10px 0;
+}
+
+.field-complete {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.field-missing {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.field-required {
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* Chat Interface Styling */
+.chat-container {
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+}
+
+.user-message {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-radius: 18px 18px 4px 18px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  max-width: 80%;
+  margin-left: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bot-message {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+  border-radius: 18px 18px 18px 4px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  max-width: 80%;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* RTL Chat Messages */
+.user-message.rtl {
+  margin-right: auto;
+  margin-left: 0;
+  border-radius: 18px 4px 18px 18px;
+  direction: rtl;
+  text-align: right;
+}
+
+.bot-message.rtl {
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 4px 18px 18px 18px;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Streamlit Component Overrides */
+.stTextInput > div > div > input {
+  direction: ltr;
+  text-align: left;
+}
+
+.stTextInput.rtl > div > div > input {
+  direction: rtl;
+  text-align: right;
+}
+
+.stSelectbox > div > div > div {
+  direction: ltr;
+}
+
+.stSelectbox.rtl > div > div > div {
+  direction: rtl;
+}
+
+/* Form Styling */
+.profile-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.form-section {
+  margin: 15px 0;
+  padding: 15px;
+  border-left: 4px solid #2196f3;
+  background: #f8f9fa;
+}
+
+.form-section.rtl {
+  border-left: none;
+  border-right: 4px solid #2196f3;
+}
+
+/* Button Styling */
+.stButton > button {
+  border-radius: 20px;
+  border: none;
+  padding: 8px 24px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #2196f3 0%, #21cbf3 100%);
+  color: white;
+}
+
+.secondary-button {
+  background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);
+  color: white;
+}
+
+.danger-button {
+  background: linear-gradient(135deg, #f44336 0%, #ff5722 100%);
+  color: white;
+}
+
+/* Progress Bar Styling */
+.stProgress > div > div > div > div {
+  background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%);
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Metric Cards */
+.metric-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 2em;
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.metric-label {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Status Indicators */
+.status-connected {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.status-disconnected {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.status-unknown {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #2196f3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Messages */
+.error-message {
+  background: #ffebee;
+  border: 1px solid #f44336;
+  border-radius: 5px;
+  padding: 10px;
+  color: #c62828;
+  margin: 10px 0;
+}
+
+.error-message.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Success Messages */
+.success-message {
+  background: #e8f5e8;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  padding: 10px;
+  color: #2e7d32;
+  margin: 10px 0;
+}
+
+.success-message.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Warning Messages */
+.warning-message {
+  background: #fff3e0;
+  border: 1px solid #ff9800;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ef6c00;
+  margin: 10px 0;
+}
+
+.warning-message.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Info Messages */
+.info-message {
+  background: #e3f2fd;
+  border: 1px solid #2196f3;
+  border-radius: 5px;
+  padding: 10px;
+  color: #1565c0;
+  margin: 10px 0;
+}
+
+.info-message.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Debug Panel */
+.debug-panel {
+  background: #263238;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: "Courier New", monospace;
+  font-size: 0.85em;
+  margin: 10px 0;
+  overflow-x: auto;
+}
+
+/* Source Citations */
+.source-citation {
+  background: #f5f5f5;
+  border-left: 3px solid #2196f3;
+  padding: 8px 12px;
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.source-citation.rtl {
+  border-left: none;
+  border-right: 3px solid #2196f3;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-message,
+  .bot-message {
+    max-width: 95%;
+  }
+
+  .profile-form {
+    padding: 15px;
+    margin: 5px 0;
+  }
+
+  .metric-card {
+    padding: 10px;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus Indicators */
+.stButton > button:focus,
+.stTextInput > div > div > input:focus,
+.stSelectbox > div > div > div:focus {
+  outline: 2px solid #2196f3;
+  outline-offset: 2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .user-message {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  .bot-message {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .stButton > button {
+    transition: none;
+  }
+
+  .stButton > button:hover {
+    transform: none;
+  }
+
+  .loading-spinner {
+    animation: none;
+  }
+}

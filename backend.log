@@ -1,0 +1,127 @@
+INFO:     Will watch for changes in these directories: ['/Users/noasasson/Dev-projects/chatbot-hmo-main2/backend']
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [8616] using WatchFiles
+INFO:     Started server process [8649]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:02.614225", "status": "degraded", "uptime": 0, "requests_served": 0, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+Loading knowledge base...
+Loaded 0 chunks
+Generating embeddings...
+Knowledge base initialization complete!
+INFO:     127.0.0.1:52964 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:03.853053", "status": "degraded", "uptime": 1, "requests_served": 0, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52967 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52968 - "GET /kb_stats HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:03.855692", "message_length": 22, "profile_fields_provided": {"first_name": false, "last_name": false, "id_number": false, "hmo": null, "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:03.855760", "status": "success", "processing_time": 7.104873657226562e-05, "question_generated": true}
+INFO:     127.0.0.1:52969 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/chat", "timestamp": "2025-09-07T02:34:03.857131", "message_length": 28, "hmo": "\u05db\u05dc\u05dc\u05d9\u05ea", "membership_tier": "\u05db\u05e1\u05e3", "confirmed": true, "history_length": 0, "request_count": 1}
+HTTP Request: POST https://aoai-candidates-east-us-2.openai.azure.com/openai/deployments/text-embedding-ada-002/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+HTTP Request: POST https://aoai-candidates-east-us-2.openai.azure.com/openai/deployments/text-embedding-ada-002/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+HTTP Request: POST https://aoai-candidates-east-us-2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+{"endpoint": "/chat", "timestamp": "2025-09-07T02:34:07.186083", "status": "no_match", "processing_time": 3.328964948654175, "hmo": "\u05db\u05dc\u05dc\u05d9\u05ea", "membership_tier": "\u05db\u05e1\u05e3"}
+INFO:     127.0.0.1:52970 - "POST /chat HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:10.294915", "status": "degraded", "uptime": 7, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52985 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:11.877161", "status": "degraded", "uptime": 9, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52986 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:11.883373", "message_length": 21, "profile_fields_provided": {"first_name": false, "last_name": false, "id_number": false, "hmo": null, "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:11.883613", "status": "success", "processing_time": 0.00024700164794921875, "question_generated": true}
+INFO:     127.0.0.1:52987 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:11.932961", "status": "degraded", "uptime": 9, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52988 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:16.915534", "status": "degraded", "uptime": 14, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52989 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:16.924364", "message_length": 3, "profile_fields_provided": {"first_name": false, "last_name": false, "id_number": false, "hmo": null, "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:16.924736", "status": "success", "processing_time": 0.0003840923309326172, "question_generated": true}
+INFO:     127.0.0.1:52990 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:16.967713", "status": "degraded", "uptime": 14, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52991 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:17.596809", "status": "degraded", "uptime": 15, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52992 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:17.605071", "message_length": 2, "profile_fields_provided": {"first_name": true, "last_name": false, "id_number": false, "hmo": null, "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:17.605396", "status": "success", "processing_time": 0.00033402442932128906, "question_generated": true}
+INFO:     127.0.0.1:52993 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:17.652799", "status": "degraded", "uptime": 15, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52994 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:19.558528", "status": "degraded", "uptime": 17, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52995 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:19.564946", "message_length": 9, "profile_fields_provided": {"first_name": true, "last_name": true, "id_number": false, "hmo": null, "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:19.565237", "status": "success", "processing_time": 0.0003190040588378906, "question_generated": true}
+INFO:     127.0.0.1:52996 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:19.615524", "status": "degraded", "uptime": 17, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52997 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:21.155117", "status": "degraded", "uptime": 18, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:52998 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:21.161815", "message_length": 3, "profile_fields_provided": {"first_name": true, "last_name": true, "id_number": true, "hmo": null, "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:21.162229", "status": "success", "processing_time": 0.0004239082336425781, "question_generated": true}
+INFO:     127.0.0.1:52999 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:21.209043", "status": "degraded", "uptime": 18, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53000 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:22.636592", "status": "degraded", "uptime": 20, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53001 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:22.645542", "message_length": 2, "profile_fields_provided": {"first_name": true, "last_name": true, "id_number": true, "hmo": null, "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:22.645835", "status": "success", "processing_time": 0.0003008842468261719, "question_generated": true}
+INFO:     127.0.0.1:53002 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:22.679836", "status": "degraded", "uptime": 20, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53003 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:24.436535", "status": "degraded", "uptime": 22, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53004 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:24.442562", "message_length": 4, "profile_fields_provided": {"first_name": true, "last_name": true, "id_number": true, "hmo": null, "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:24.442739", "status": "success", "processing_time": 0.00018978118896484375, "question_generated": true}
+INFO:     127.0.0.1:53005 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:24.474215", "status": "degraded", "uptime": 22, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53006 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:28.395514", "status": "degraded", "uptime": 25, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53009 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:28.402294", "message_length": 9, "profile_fields_provided": {"first_name": true, "last_name": true, "id_number": true, "hmo": "\u05de\u05db\u05d1\u05d9", "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:28.402478", "status": "success", "processing_time": 0.00018978118896484375, "question_generated": true}
+INFO:     127.0.0.1:53010 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:28.437390", "status": "degraded", "uptime": 26, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53011 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:31.425183", "status": "degraded", "uptime": 29, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53012 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:31.432675", "message_length": 3, "profile_fields_provided": {"first_name": true, "last_name": true, "id_number": true, "hmo": "\u05de\u05db\u05d1\u05d9", "membership_tier": null, "confirmed": false}}
+{"endpoint": "/collect_user_info", "timestamp": "2025-09-07T02:34:31.433225", "status": "success", "processing_time": 0.0005660057067871094, "question_generated": true}
+INFO:     127.0.0.1:53013 - "POST /collect_user_info HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:31.471654", "status": "degraded", "uptime": 29, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53014 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:33.112924", "status": "degraded", "uptime": 30, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53015 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:35.952433", "status": "degraded", "uptime": 33, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53016 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:39.974866", "status": "degraded", "uptime": 37, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53018 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:43.302179", "status": "degraded", "uptime": 40, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53019 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:53.802139", "status": "degraded", "uptime": 51, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53020 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:34:53.845932", "status": "degraded", "uptime": 51, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53021 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:35:02.864822", "status": "degraded", "uptime": 60, "requests_served": 1, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53028 - "GET /health HTTP/1.1" 200 OK
+{"endpoint": "/chat", "timestamp": "2025-09-07T02:35:02.872520", "message_length": 61, "hmo": "\u05de\u05db\u05d1\u05d9", "membership_tier": "\u05d6\u05d4\u05d1", "confirmed": false, "history_length": 0, "request_count": 2}
+HTTP Request: POST https://aoai-candidates-east-us-2.openai.azure.com/openai/deployments/text-embedding-ada-002/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+HTTP Request: POST https://aoai-candidates-east-us-2.openai.azure.com/openai/deployments/text-embedding-ada-002/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+HTTP Request: POST https://aoai-candidates-east-us-2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+{"endpoint": "/chat", "timestamp": "2025-09-07T02:35:05.396245", "status": "no_match", "processing_time": 2.5237538814544678, "hmo": "\u05de\u05db\u05d1\u05d9", "membership_tier": "\u05d6\u05d4\u05d1"}
+INFO:     127.0.0.1:53029 - "POST /chat HTTP/1.1" 200 OK
+{"endpoint": "/health", "timestamp": "2025-09-07T02:36:56.990237", "status": "degraded", "uptime": 174, "requests_served": 2, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53091 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53092 - "POST /chat HTTP/1.1" 422 Unprocessable Entity
+{"endpoint": "/health", "timestamp": "2025-09-07T02:36:57.034365", "status": "degraded", "uptime": 174, "requests_served": 2, "checks": {"openai_credentials": true, "knowledge_base": false, "embeddings": false}}
+INFO:     127.0.0.1:53094 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'app/services/knowledge_base.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8649]
+INFO:     Started server process [10787]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10787]
+INFO:     Stopping reloader process [8616]
